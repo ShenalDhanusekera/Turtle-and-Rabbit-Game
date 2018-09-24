@@ -32,7 +32,7 @@ void draw()
   // makes the background black
   background (34,139,34);
   
-// Turtle's Road
+  // Turtle's Road
   fill(0,0,0);
   rect(500,0,200,800);
   fill(255,255,255);
@@ -45,7 +45,7 @@ void draw()
   rect(600,600,10,50);
   rect(600,700,10,50);
  
-// Rabbit's Road
+  // Rabbit's Road
   fill(0,0,0);
   rect(100,0,200,800);
   fill(255,255,255);
@@ -73,8 +73,8 @@ void draw()
   image(turtle, 600, 50+press, width1, height1);
   image(rabbit, 200, 50+press1, width1, height1);
   
-    // When the Turtle reach the bottom a text apear and stops the program
-    if (press >= 700)
+  // When the Turtle reach the bottom a text apear and stops the program
+  if (press >= 700)
   {
     // Color
     fill(255,255,255);
@@ -85,8 +85,8 @@ void draw()
     // stops the program
     stop();
   }
-    // When the Rabbit reach the bottom a text apear and stops the program
-    if (press1 >= 700)
+  // When the Rabbit reach the bottom a text apear and stops the program
+  if (press1 >= 700)
   {
     // Color
     fill(255,255,255);
@@ -97,6 +97,7 @@ void draw()
     // stop the program
     stop();
   }
+  
 }
 
 void keyPressed(){
@@ -104,11 +105,13 @@ void keyPressed(){
   // when the a or A is pressed it moves down by 10 pixels
   if (key == 'a' || key == 'A')
   {
+    //Moves down by 10 pixels
     press1 += 10;
   } 
   // when the l or L is pressed it moves down by 10 pixels
   if (key == 'l' || key == 'L')
   {
+    //Moves down by 10 pixels
     press += 10;
   }
   
